@@ -1,0 +1,107 @@
+# Dependencies
+node_modules/
+
+# Compiled TypeScript output
+dist/
+build/
+*.tsbuildinfo
+
+# Build artifacts and compiled files
+*.js.map
+*.d.ts.map
+
+# Logs and runtime files
+*.log
+logs/
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage and reports
+coverage/
+*.lcov
+.nyc_output
+test-results/
+playwright-report/
+
+# Cache directories
+.cache/
+.parcel-cache/
+*.tscache
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment and configuration files
+.env*
+config/local.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Archives and compressed files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Docker files (optional, uncomment if not needed for development context)
+# Dockerfile
+# docker-compose.yml
+# .dockerignore
+
+# Large media files (uncomment if project has media files)
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.svg
+# *.pdf
+
+# Generated documentation (uncomment if auto-generated docs exist)
+# docs/generated/
+# api-docs/
+
+# Database files (if using local databases)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+
+# PM2 and process management
+.pm2/
+ecosystem.config.js
+
+# Testing artifacts
+jest-coverage/
+.jest/

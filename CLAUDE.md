@@ -16,7 +16,10 @@
    - 해당 features 문서 경로도 PROJECT_SPEC.md에 추가
 6. **샘플 데이터 및 테스트 가이드 업데이트**:
    - `data/create-sample-data.sh`에 새 API의 샘플 데이터 생성 로직 추가
-   - `data/curl-examples.md`에 새 API의 간결한 cURL 사용 예제 추가
+   - 도메인별 cURL 사용 예제 파일에 새 API 추가:
+     - 기구 관련 API: `data/curl-equipment-examples.md`
+     - 회원 관리 API: `data/curl-members-examples.md`
+     - 기타 도메인: 해당 도메인별 cURL 예제 파일 생성
    - 기존 API와 연동되는 경우 통합 테스트 시나리오도 포함
 
 ### 프로젝트 사양 참조
@@ -44,8 +47,11 @@
   - 모든 API에 대한 실제 테스트 가능한 샘플 데이터 자동 생성
   - 신규 API 추가 시 해당 API의 샘플 데이터 생성 로직 추가
   - API 간 연동 테스트를 위한 통합 시나리오 포함 (예: 로그인 후 인증 API 테스트)
-- **cURL 사용 가이드**: `data/curl-examples.md`
-  - 각 API별 간결하고 실용적인 cURL 명령어 예제 제공
-  - 에러 케이스 및 성공 케이스 모두 포함
-  - 자동화 가능한 스크립트 형태의 예제 제공 (jq 활용한 ID/토큰 추출 등)
-  - 최대한 간결하게 작성하여 빠른 참조 가능하도록 구성
+- **cURL 사용 가이드**: 도메인별로 분리된 파일들
+  - `data/curl-equipment-examples.md`: 기구 관리 API 전용 cURL 예제
+  - `data/curl-members-examples.md`: 회원 관리 API 전용 cURL 예제
+  - 각 파일별 구성 요소:
+    - 도메인별 API의 간결하고 실용적인 cURL 명령어 예제 제공
+    - 에러 케이스 및 성공 케이스 모두 포함
+    - 자동화 가능한 스크립트 형태의 예제 제공 (jq 활용한 ID/토큰 추출 등)
+    - 최대한 간결하게 작성하여 빠른 참조 가능하도록 구성

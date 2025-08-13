@@ -95,6 +95,16 @@
 - **상태**: 개발 완료 및 테스트 완료
 - **상세 명세서**: `features/user-management.md`
 
+### CORS 지원 ✅
+- **기능**: 브라우저 기반 클라이언트의 Cross-Origin 요청 지원
+- **설정**: localhost:3000에서의 API 접근 허용
+- **적용 범위**: 모든 API 엔드포인트
+- **지원 메서드**: GET, POST, PUT, DELETE, OPTIONS
+- **헤더**: Content-Type, Authorization
+- **상태**: 개발 완료 및 테스트 완료
+- **상세 명세서**: `features/cors-support.md`
+
 ## 기능별 문서 참조
 - **기구 관리**: [features/equipment-management.md](./equipment-management.md)
 - **회원 관리**: [features/user-management.md](./user-management.md)
+- **CORS 지원**: [features/cors-support.md](./cors-support.md)
